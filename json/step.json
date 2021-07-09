@@ -1,0 +1,233 @@
+{
+  "POWER": {
+    "task": [
+      {
+        "workStepName": "POWER_COMPLETE",
+        "optFieldDetails": [
+          {
+            "title": "AC Power Ready",
+            "fieldName": "AC_PO_53_OPT",
+            "fieldValue": null,
+            "fieldType": "DATE",
+            "subType": "Actual & Forecast",
+            "isMandatory": "No",
+            "defaultValue": "",
+            "enumValues": [],
+            "optDescription": "Date when AC Power is ready",
+            "isVisibleToVendor": "EDIT",
+            "groupNum": 1,
+            "seq": 1,
+            "actualAndForecast": [
+              {
+                "fieldName": "AC_PO_53_ACTUAL_OPT",
+                "fieldValue": null
+              },
+              {
+                "fieldName": "AC_PO_53_FORECAST_OPT",
+                "fieldValue": "{\"isLocked\":null,\"forecastDate\":\"03/18/2021\"}"
+              }
+            ]
+          },
+          {
+            "title": "DC Power Ready",
+            "fieldName": "DC_PO_114_OPT",
+            "fieldValue": null,
+            "fieldType": "DATE",
+            "subType": "Actual & Forecast",
+            "isMandatory": "No",
+            "defaultValue": "",
+            "enumValues": [],
+            "optDescription": "Date DC Power is Ready at the site.",
+            "isVisibleToVendor": "EDIT",
+            "groupNum": 1,
+            "seq": 2,
+            "actualAndForecast": [
+              {
+                "fieldName": "DC_PO_114_ACTUAL_OPT",
+                "fieldValue": null
+              },
+              {
+                "fieldName": "DC_PO_114_FORECAST_OPT",
+                "fieldValue": null
+              }
+            ]
+          },
+          {
+            "title": "Tap-Up Ready",
+            "fieldName": "TAP_U_51458_OPT",
+            "fieldValue": null,
+            "fieldType": "DATE",
+            "subType": "Actual & Forecast",
+            "isMandatory": "Yes",
+            "defaultValue": "",
+            "enumValues": [],
+            "optDescription": "Power Tap Up Forecast and Actual",
+            "isVisibleToVendor": "EDIT",
+            "groupNum": 1,
+            "seq": 3,
+            "actualAndForecast": [
+              {
+                "fieldName": "TAP_U_51458_ACTUAL_OPT",
+                "fieldValue": "02/27/2021"
+              },
+              {
+                "fieldName": "TAP_U_51458_FORECAST_OPT",
+                "fieldValue": "{\"isLocked\":null,\"forecastDate\":\"03/01/2021\"}"
+              }
+            ]
+          },
+          {
+            "title": "Power Company Workflow Satus",
+            "fieldName": "POWER_106461_OPT",
+            "fieldValue": "MR Manager Approves Work Release,Applicant Performs Make Ready",
+            "fieldType": "PICKLIST",
+            "subType": "multiSelect",
+            "isMandatory": "Yes",
+            "defaultValue": "",
+            "enumValues": [
+              "Pending Payment",
+              "MR Manager Approves Work Release",
+              "Construction Creates CSS Account",
+              "Construction Performs Install",
+              "Applicant Performs Make Ready",
+              "Construction Performs GPC Construction",
+              "On Hold"
+            ],
+            "optDescription": "This field to track power company workflow.  requested by Michael Kehoe.",
+            "isVisibleToVendor": "EDIT",
+            "groupNum": 1,
+            "seq": 4,
+            "actualAndForecast": []
+          },
+          {
+            "title": "Power Upgrade Type (Temp)",
+            "fieldName": "POWER_511457_OPT",
+            "fieldValue": null,
+            "fieldType": "PICKLIST",
+            "subType": "multiSelect",
+            "isMandatory": "No",
+            "defaultValue": "",
+            "enumValues": [
+              "None",
+              "AC Utility",
+              "Battery Upgrade",
+              "Battery Replacement",
+              "Battery Install",
+              "Power Plant Upgrade",
+              "Power Plant Replacement",
+              "Power Plant Install",
+              "HVAC Upgrade",
+              "HVAC Replacement",
+              "HVAC Install",
+              "Generator Upgrade",
+              "Generator Tank Upgrade",
+              "Generator Replacement",
+              "Generator Install"
+            ],
+            "optDescription": "Lists all power upgrades required for the site location.",
+            "isVisibleToVendor": "VIEW",
+            "groupNum": 1,
+            "seq": 5,
+            "actualAndForecast": []
+          },
+          {
+            "title": "Generator Commissioned (Temp)",
+            "fieldName": "GENER_511458_OPT",
+            "fieldValue": null,
+            "fieldType": "DATE",
+            "subType": "Actual & Forecast",
+            "isMandatory": "No",
+            "defaultValue": "",
+            "enumValues": [],
+            "optDescription": "The date the generator is started at the site.",
+            "isVisibleToVendor": "VIEW",
+            "groupNum": 1,
+            "seq": 6,
+            "actualAndForecast": [
+              {
+                "fieldName": "GENER_511458_ACTUAL_OPT",
+                "fieldValue": null
+              },
+              {
+                "fieldName": "GENER_511458_FORECAST_OPT",
+                "fieldValue": null
+              }
+            ]
+          },
+          {
+            "title": "Battery Installed (Temp)",
+            "fieldName": "BATTE_511461_OPT",
+            "fieldValue": null,
+            "fieldType": "DATE",
+            "subType": "Actual & Forecast",
+            "isMandatory": "No",
+            "defaultValue": "",
+            "enumValues": [],
+            "optDescription": "The date all battery upgrades are installed at the site.",
+            "isVisibleToVendor": "VIEW",
+            "groupNum": 1,
+            "seq": 7,
+            "actualAndForecast": [
+              {
+                "fieldName": "BATTE_511461_ACTUAL_OPT",
+                "fieldValue": "06/01/2021"
+              },
+              {
+                "fieldName": "BATTE_511461_FORECAST_OPT",
+                "fieldValue": "{\"isLocked\":null,\"forecastDate\":\"06/01/2021\"}"
+              }
+            ]
+          },
+          {
+            "title": "HVAC Installed (Temp)",
+            "fieldName": "HVAC__511464_OPT",
+            "fieldValue": null,
+            "fieldType": "DATE",
+            "subType": "Actual & Forecast",
+            "isMandatory": "No",
+            "defaultValue": "",
+            "enumValues": [],
+            "optDescription": "The date all HVAC upgrades are installed at the site.",
+            "isVisibleToVendor": "VIEW",
+            "groupNum": 1,
+            "seq": 8,
+            "actualAndForecast": [
+              {
+                "fieldName": "HVAC__511464_ACTUAL_OPT",
+                "fieldValue": null
+              },
+              {
+                "fieldName": "HVAC__511464_FORECAST_OPT",
+                "fieldValue": null
+              }
+            ]
+          },
+          {
+            "title": "Power Plant Installed (Temp)",
+            "fieldName": "POWER_511467_OPT",
+            "fieldValue": null,
+            "fieldType": "DATE",
+            "subType": "Actual & Forecast",
+            "isMandatory": "No",
+            "defaultValue": "",
+            "enumValues": [],
+            "optDescription": "The date all power plant upgrades are installed at the site.",
+            "isVisibleToVendor": "VIEW",
+            "groupNum": 1,
+            "seq": 9,
+            "actualAndForecast": [
+              {
+                "fieldName": "POWER_511467_ACTUAL_OPT",
+                "fieldValue": null
+              },
+              {
+                "fieldName": "POWER_511467_FORECAST_OPT",
+                "fieldValue": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
