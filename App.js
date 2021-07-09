@@ -198,6 +198,7 @@ import moment from 'moment';
 const App = () =>{
   <View>
     <Text>hello world</Text>
+    <Text>Good Morning</Text>
   </View>
 }
 export default App;
